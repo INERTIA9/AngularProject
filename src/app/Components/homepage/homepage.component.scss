@@ -1,0 +1,89 @@
+#videodiv {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+#div1 {
+    height:100%;
+    width: 100%;
+    background: url(https://dxaurk9yhilm4.cloudfront.net/images/287/background_imagev2_3580431e48aedf97dcedf972d1481942.jpg);
+    background-size: 100%;
+}
+#div2 {
+    height:100%;
+    width: 100%;
+}
+.heading {
+    padding: 50xpx;
+    border: 2px solid red;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    background-color: yellow;
+}
+.description {
+    line-height: 2;
+    font-size: 0.9rem;
+}
+
+.descriptioncontent {
+    display: block;
+    text-align: start;
+    position: relative;
+    opacity: 1;
+    padding-left: 150px;
+    font-size: 1.2rem;
+    font-family: messina-sans;
+}
+.manwithcoffee {
+    height: 60%;
+    width: 34%;
+    padding-left: 92px;
+    padding-bottom: 50px;
+    display: inline-block;
+    position: relative;
+    padding-top: 86px;
+}
+.boat {
+    position: absolute;
+    height: 100%;
+    width: 36%;
+    padding-top: 140px;
+    padding-left: 700px;
+}
+
+.blocksclass {
+    display: inline-block;
+    position: absolute;
+}
+.descriptioncontent2 {
+    padding-bottom: 100px;
+}
+
+.descriptioncontent2 {
+    
+    line-height: 2;
+    font-size: 0.9rem;
+}
+.row {
+    display: flex;
+   
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    position: relative;
+  }
+  ::ng-deep .mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+   background-color:black;
+  
+}
+
+.remove-border-bottom ::ng-deep .mat-tab-header {
+    border-bottom: none;
+}

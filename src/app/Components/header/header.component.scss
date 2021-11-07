@@ -1,0 +1,44 @@
+.button {
+  color:white;
+  margin: 2px;
+  font-family:'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+-webkit-transition: 0.5 ease;
+transition: 0.5 ease;
+
+}
+button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+// .video {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 20%;
+//   min-width: 100%;
+//   min-height:100%;
+//   width:auto;
+//   height: auto;
+//   z-index: -100;
+  
+    
+// }
+
+.toolbar {
+  background-color: transparent !important;
+  z-index: 1000;
+  position: absolute;
+  margin-top: 30px;
+  width: 95%;
+}
