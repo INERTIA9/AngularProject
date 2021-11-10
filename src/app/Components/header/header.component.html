@@ -1,7 +1,7 @@
 <mat-toolbar class="toolbar">
     <div>
         <img src="./../../../assets/Images/DISCOVERYLOGO.jpg"
-            style="width: 32px; border-radius: 50%;margin-left: 90px;margin-right: 10px;">
+            style="width: 32px; border-radius: 50%;margin-left: 90px;margin-right: 10px;" (click)="onhomepage()">
 
     </div>
     <div fxLayout="column" fxLayoutAlign="start center">
@@ -17,10 +17,10 @@
 
     <span class="spacer"></span>
 
-    <button mat-button class="button">About DLC</button>
-    <button mat-button class="button">OurWorlds</button>
-    <button mat-button class="button">Experiences</button>
-    <button mat-button class="button">Gallery</button>
+    <button mat-button class="button" (click)="onaboutdlc()">About DLC</button>
+    <button mat-button class="button" (click)="onourworlds()">OurWorlds</button>
+    <button mat-button class="button" (click)="onexperiences()">Experiences</button>
+    <button mat-button class="button" (click)="ongallery()">Gallery</button>
     <button mat-button class="button">Press</button>
     <button mat-icon-button [matMenuTriggerFor]="beforeMenu">
         <mat-icon style="color: white; margin-left: 28px;">menu</mat-icon>
