@@ -15,8 +15,12 @@ import { HomepageComponent } from './Components/homepage/homepage.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import { AboutdlcComponent } from './Components/aboutdlc/aboutdlc.component';
-
-
+// import { SliderModule } from '@angular-image-slider';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { OurworldsComponent } from './Components/ourworlds/ourworlds.component';
+import { ExperiencesComponent } from './Components/experiences/experiences.component';
+import { GalleryComponent } from './Components/gallery/gallery.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -25,7 +29,10 @@ import { AboutdlcComponent } from './Components/aboutdlc/aboutdlc.component';
     HeaderComponent,
     FooterComponent,
     HomepageComponent,
-    AboutdlcComponent
+    AboutdlcComponent,
+    OurworldsComponent,
+    ExperiencesComponent,
+    GalleryComponent
     
 
  
@@ -40,7 +47,9 @@ import { AboutdlcComponent } from './Components/aboutdlc/aboutdlc.component';
     FlexLayoutModule,
     MatDividerModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    NgImageSliderModule,
+    MatMenuModule
    
     
   ],
