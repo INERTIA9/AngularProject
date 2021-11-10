@@ -12,7 +12,7 @@
     padding-top: 88px;
 }
 #div2 {
-    height:100%;
+    height: 100%;
     width: 100%;
 }
 .heading {
@@ -65,35 +65,32 @@
 }
 
 .descriptioncontent2 {
-    
     line-height: 2;
     font-size: 0.9rem;
 }
 .row {
     display: flex;
-   
-  }
-  
-  /* Create three equal columns that sits next to each other */
-  .column {
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
     flex: 33.33%;
     padding: 5px;
     position: relative;
-  }
-  ::ng-deep .mat-tab-group.mat-primary .mat-ink-bar,
+}
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar,
 .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-   background-color:black;
-  
+    background-color: black;
 }
 
 .remove-border-bottom ::ng-deep .mat-tab-header {
     border-bottom: none;
 }
-#div3{
+#div3 {
     height: 100%;
     width: 100%;
 }
-.img1{
+.img1 {
     position: absolute;
     z-index: -1;
     height: 100%;
@@ -107,9 +104,29 @@
     position: relative;
     z-index: 2;
 }
-.text{
+.text {
     margin-top: -400px;
     color: white;
     font-size: 40px;
+    font-weight: lighter;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.experiencevideocontent {
+    color: white;
+    line-height: 1;
+    font-size: 1.2rem;
+}
+.experiencevideoparagraph {
+    color: white;
+    display: block;
+    position: relative;
+    opacity: 1;
+    padding-left: 11px;
+    font-size: 1.5rem;
+    font-family: gt-sectra;
     font-weight: lighter;
 }
