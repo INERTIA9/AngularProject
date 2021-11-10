@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -19,7 +19,8 @@ export class HomepageComponent implements OnInit {
     div1:boolean=true;
     div2:boolean=false;
     div3:boolean=false;
-  constructor() { }
+
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -41,24 +42,52 @@ export class HomepageComponent implements OnInit {
     this.wellness = false
     this.wellnessvideo = true
   }
-  toggle() {
-    this.show = !this.show;
+  // toggle() {
+  //   this.show = !this.show;
+  // }
+//   div1Function(){
+//     this.div1=true;
+//     this.div2=false;
+//     this.div3=false
+// }
+
+// div2Function(){
+//     this.div2=true;
+//     this.div1=false;
+//     this.div3=false
+// }
+
+// div3Function(){
+//     this.div3=true;
+//     this.div2=false;
+//     this.div1=false
+// }
+expvideoclose(){
+  this.experiencesVideo=false
+  this.experiences=true
+  this.lifestyle=true
+  this.wellness=true
+}
+lifestyleclosevideo(){
+  this.lifestylevideo=false
+  this.experiences=true
+  this.lifestyle=true
+  this.wellness=true
+}
+wellnessclosevideo(){
+  this.wellnessvideo=false
+  this.experiences=true
+  this.lifestyle=true
+  this.wellness=true
+}
+onExplore(){
+  this.router.navigateByUrl('/experiences')
   }
-  div1Function(){
-    this.div1=true;
-    this.div2=false;
-    this.div3=false
-}
 
-div2Function(){
-    this.div2=true;
-    this.div1=false;
-    this.div3=false
-}
-
-div3Function(){
-    this.div3=true;
-    this.div2=false;
-    this.div1=false
-}
+  onlifestyleexplore(){
+    this.router.navigateByUrl('/aboutdlc')
+  }
+  onwellnessexplore(){
+    this.router.navigateByUrl('/')
+  }
 }
