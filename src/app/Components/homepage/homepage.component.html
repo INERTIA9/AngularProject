@@ -14,7 +14,7 @@
 
 <div id="div1">
     <div class="blocksclass">
-        <div fxLayout="column" fxLayoutAlign="start margin-left" style="padding-top: 24px;">
+        <div fxLayout="column" fxLayoutAlign="start margin-left" style="padding-top: 24px; margin-top: -258px;">
             <span
                 style=" font-family: gt-sectra; font-weight: 200;font-size: 53px;padding-top: 150px; padding-left: 150px;">Welcome
                 to
@@ -133,17 +133,106 @@
 </div>
 
 <div style="height:auto;">
-    <video src="../../../assets/Videos/homepageexperiencevideo/experiences_190722_093236.mp4" autoplay
-        *ngIf="experiencesVideo">
-    </video>
-    <video src="../../../assets/Videos/homepageexperiencevideo/lifestyle.mp4" autoplay *ngIf="lifestylevideo">
-    </video>
-    <video src="../../../assets/Videos/homepageexperiencevideo/wellness.mp4" autoplay *ngIf="wellnessvideo">
-    </video>
+    <div *ngIf="experiencesVideo" class="container">
+        <video src="../../../assets/Videos/homepageexperiencevideo/experiences_190722_093236.mp4" autoplay loop>
+
+        </video>
+        <div style="position: absolute; align-items: center; margin-top: -600px; margin-left: 139px;">
+            <h1 style="color: white;font-size: 30px;font-family: roboto; margin-left: 9px;">Experiences</h1>
+            <div>
+                <div class="experiencevideoparagraph"> Experience the ultimate round of golf on championship<br> mission
+                    to courses designed by the world’s most highly acclaimed<br>
+                    architects or take a thrilling adventure with limitless <br>
+                    activities for everyone to enjoy
+                </div>
+            </div>
+
+            <button mat-button (click)="onExplore()"
+                style="color:white; border:  solid white; border-width: thin; opacity: 0.7; padding: 10px 45px 10px 45px; font-size: 12px;margin-top: 37px;margin-left: 10px;">
+                Explore
+            </button>
+
+            <button mat-icon-button style="color: white; top: 0;right: 0; float: right;">
+                <i class="material-icons-outlined" style="margin-left: 478px; margin-top: -410px;font-size: 2rem;">
+                    close
+                </i>
+            </button>
+
+
+        </div>
 
 
 
-    <div fxLayout="row" fxLayoutAlign="start stretch" *ngIf="experiences && lifestyle && wellness" >
+    </div>
+
+    <div *ngIf="lifestylevideo" class="container">
+        <video src="../../../assets/Videos/homepageexperiencevideo/lifestyle.mp4" autoplay loop>
+
+        </video>
+        <div style="position: absolute; align-items: center; margin-top: -600px; margin-left: 139px;">
+            <h1 style="color: white;font-size: 30px;font-family: roboto; margin-left: 9px;">Lifestyle</h1>
+            <div>
+                <div class="experiencevideoparagraph"> Relish the very best time of your life with the ones you<br>
+                    mission
+                    love in our bespoke community that cater to a family<br>
+                    oriented lifestyle through unparalleled amenities and <br>
+                    inspired experiences
+                </div>
+
+                <button mat-button (click)="onlifestyleexplore()"
+                    style="color:white; border:  solid white; border-width: thin; opacity: 0.7; padding: 10px 45px 10px 45px; font-size: 12px;margin-top: 37px;margin-left: 10px;">
+                    Explore
+                </button>
+
+            </div>
+
+
+            <button mat-icon-button (click)="lifestyleclosevideo()"
+                style="color: white; top: 0;right: 0; float: right;">
+                <i class="material-icons-outlined" style="margin-left: 478px; margin-top: -410px;font-size: 2rem;">
+                    close
+                </i>
+            </button>
+
+
+
+        </div>
+
+    </div>
+
+    <div *ngIf="wellnessvideo" class="container">
+        <video src="../../../assets/Videos/homepageexperiencevideo/wellness.mp4" autoplay loop>
+
+        </video>
+
+        <div style="position: absolute; align-items: center; margin-top: -600px; margin-left: 139px;">
+            <h1 style="color: white;font-size: 30px;font-family: roboto; margin-left: 9px;">Wellness</h1>
+            <div>
+                <div class="experiencevideoparagraph">Relax and refresh your body and your mind in exquisite<br> mission
+                    surroundings. Escape to our stunning pools,unwind in<br>
+                    relaxing sapas and explore innovative international <br>
+                    culliary offerings.
+                </div>
+
+                <button mat-button (click)="onlifestyleexplore()"
+                    style="color:white; border:  solid white; border-width: thin; opacity: 0.7; padding: 10px 45px 10px 45px; font-size: 12px;margin-top: 37px;margin-left: 10px;">
+                    Explore
+                </button>
+            </div>
+
+            <button mat-icon-button (click)="wellnessclosevideo()" style="color: white; top: 0;right: 0; float: right;">
+                <i class="material-icons-outlined" style="margin-left: 478px; margin-top: -410px;font-size: 2rem;">
+                    close
+                </i>
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+    <div fxLayout="row" fxLayoutAlign="start stretch" *ngIf="experiences && lifestyle && wellness">
         <div>
             <img src="../../../assets/Images/aboutdlcimages/Expereinces_slider_190716_095517_e36797c82dbcb9dea0800f713424f022.jpg"
                 width="420px" style="z-index: -1;">
@@ -185,46 +274,47 @@
 </div>
 
 
-<div *ngIf="div1">
+<!-- <div *ngIf="div1">
     <div fxLayout="row" fxLayoutAlign=" center" style="background-color: whitesmoke; padding-top: 100px;">
         <div>
             <img src="../../../assets/Images/experiencesimages/swimmingwomen.jpg" width="949px" height="739px"
                 style="z-index: 110;">
         </div>
-    
+
         <div>
             <mat-card
                 style="width: 419px ;height: 270px ; background-color: white; margin-left: -328px ; z-index: 1;padding: 71px;">
-    
+
                 <div>
                     <h1
                         style=" margin-bottom: 2rem; line-height: 1.1;font-family: gt-sectra;font-weight: 200;font-size:34px;">
                         Wellness
                     </h1>
                 </div>
-    
+
                 <div>
                     <p
                         style="display: block; text-align: start; position: relative; opacity: 1; transform: translate(0px, 0px);line-height: 2;font-size: 1rem;opacity: 0.7;">
-    
-    
+
+
                         Unwind at an indulgent spa. Set challenging targets with a tailor-made fitness plan. Or let our
-                        talented chefs treat you to our flavorful international menus created using the finest, carefully
+                        talented chefs treat you to our flavorful international menus created using the finest,
+                        carefully
                         selected foods sourced locally from organic farms.
-    
+
                     </p>
                     <div style="padding-top: 38px;">
                         <button mat-button
                             style="color:black; border:  solid black; border-width: thin; opacity: 0.7; padding: 10px 45px 10px 45px; font-size: 12px;">Explore</button>
                     </div>
                 </div>
-    
-    
-    
+
+
+
             </mat-card>
-    
+
         </div>
-    
+
     </div>
 </div>
 <div *ngIf="div2">
@@ -233,45 +323,46 @@
             <img src="../../../assets/Images/experiencesimages/golffplayer.jpg" width="949px" height="739px"
                 style="z-index: 110;">
         </div>
-    
+
         <div>
             <mat-card
                 style="width: 423px;height: 270px; background-color: white; margin-left: -625px;z-index: 1; padding: 60px;">
-    
+
                 <div>
                     <h1
                         style="margin-bottom: 2rem; line-height: 1.1;font-family: gt-sectra;font-weight: 200;font-size: 34px;">
                         Golf
                     </h1>
                 </div>
-    
+
                 <div>
                     <p
                         style="display: block; text-align: start; position: relative; opacity: 1; transform: translate(0px, 0px);line-height: 2;font-size: 1rem;opacity: 0.7;">
-    
-                        We commission the world’s most renowned course architects to design spectacular golf experiences on
+
+                        We commission the world’s most renowned course architects to design spectacular golf experiences
+                        on
                         challenging yet incredibly playable 18-hole courses. Our trademark comfort stations also set new
                         standards in on-course amenities.
-    
+
                     </p>
                     <div style="padding-top: 38px;">
                         <button mat-button
-                        style="color:black; border:  solid black; border-width: thin; opacity: 0.7; padding: 10px 45px 10px 45px; font-size: 12px;">Explore</button>
+                            style="color:black; border:  solid black; border-width: thin; opacity: 0.7; padding: 10px 45px 10px 45px; font-size: 12px;">Explore</button>
                     </div>
                 </div>
-    
-    
-    
+
+
+
             </mat-card>
-    
+
         </div>
-    
+
     </div>
-    
+
 </div>
 <div *ngIf="div3">
     GHI
 </div>
 <button style="size: 100px;" (click)="div1Function()"></button>
 <button (click)="div2Function()"></button>
-<button (click)="div3Function()"></button>
+<button (click)="div3Function()"></button> -->
