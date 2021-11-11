@@ -13,7 +13,11 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+
   }
+  menuBar: any = true;
+  displayMenuBar: any = false;
+  navbar:any=true;
   onaboutdlc() {
     this.router.navigateByUrl("/aboutdlc")
   }
@@ -29,4 +33,14 @@ export class HeaderComponent implements OnInit {
   onhomepage() {
     this.router.navigateByUrl("/homepage")
   }
+  clickMenuBar(){
+    this.menuBar = false;
+    this.displayMenuBar = true;
+  }
+  closeVideo(){
+    this.menuBar = true;
+    this.displayMenuBar = false;
+    this.navbar=false;
+  }
+  
 }
