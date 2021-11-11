@@ -83,3 +83,40 @@ button:hover{
   right: 45px;
   font-size: 60px;
 }
+.menu_Container {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-color: black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  font-size: 100px;
+}
+.menu_bar {
+  position: relative;
+  left: 22%;
+  top: 8%;
+  padding: 10px 30px;
+  color: white;
+}
+.data {
+  font-size: 60px;
+  padding: 35px 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+.close_btn {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 5%;
+  right: 100px;
+  padding: 15px;
+  font-size: 28px;
+  color: white;
+  z-index: 123;
+  cursor: pointer;
+}
