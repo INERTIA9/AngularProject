@@ -2,7 +2,7 @@
     <app-header></app-header>
     <video id="videodiv"
         src="https://player.vimeo.com/external/536055631.hd.mp4?s=7f6a254bdf972674127e5909312fa5de8b8d2453&amp;profile_id=174&amp;download=1"
-        data-length="" muted="" loop="" autoplay="" playsinline="">
+        autoplay loop>
 
     </video>
 
@@ -134,7 +134,7 @@
 
 <div style="height:auto;">
     <div *ngIf="experiencesVideo" class="container">
-        <video src="../../../assets/Videos/homepageexperiencevideo/experiences_190722_093236.mp4" autoplay loop>
+        <video src="../../../assets/Videos/homepageexperiencevideo/experiences_190722_093236.mp4" autoplay loop >
 
         </video>
         <div style="position: absolute; align-items: center; margin-top: -600px; margin-left: 139px;">
@@ -152,7 +152,7 @@
                 Explore
             </button>
 
-            <button mat-icon-button style="color: white; top: 0;right: 0; float: right;">
+            <button mat-icon-button   (click)="expvideoclose()"style="color: white; top: 0;right: 0; float: right;">
                 <i class="material-icons-outlined" style="margin-left: 478px; margin-top: -410px;font-size: 2rem;">
                     close
                 </i>
