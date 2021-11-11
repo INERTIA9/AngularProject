@@ -21,6 +21,7 @@ import { OurworldsComponent } from './Components/ourworlds/ourworlds.component';
 import { ExperiencesComponent } from './Components/experiences/experiences.component';
 import { GalleryComponent } from './Components/gallery/gallery.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { PressComponent } from './Components/press/press.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {MatMenuModule} from '@angular/material/menu';
     AboutdlcComponent,
     OurworldsComponent,
     ExperiencesComponent,
-    GalleryComponent
+    GalleryComponent,
+    PressComponent
     
 
  
