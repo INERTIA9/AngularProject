@@ -7,6 +7,7 @@ import { AboutdlcComponent } from './Components/aboutdlc/aboutdlc.component';
 import { OurworldsComponent } from './Components/ourworlds/ourworlds.component';
 import { ExperiencesComponent } from './Components/experiences/experiences.component';
 import { GalleryComponent } from './Components/gallery/gallery.component';
+import { PressComponent } from './Components/press/press.component';
 
 
 
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'ourworlds', component: OurworldsComponent },
   { path: 'experiences', component: ExperiencesComponent },
   { path: 'gallery', component: GalleryComponent },
-
+  {path: 'press', component:PressComponent}
 
 ];
 
