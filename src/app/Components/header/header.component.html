@@ -16,18 +16,27 @@
     </div> -->
 
     <span class="spacer"></span>
-
-    <button mat-button class="button" (click)="onaboutdlc()">About DLC</button>
-    <button mat-button class="button" (click)="onourworlds()">OurWorlds</button>
-    <button mat-button class="button" (click)="onexperiences()">Experiences</button>
-    <button mat-button class="button" (click)="ongallery()">Gallery</button>
-    <button mat-button class="button">Press</button>
-    <button mat-icon-button [matMenuTriggerFor]="beforeMenu">
-        <mat-icon style="color: white; margin-left: 28px;">menu</mat-icon>
-    </button>
-    <mat-menu #beforeMenu="matMenu" xPosition="before" class="overlay">
-        <button  class="overlay-content" mat-menu-item>Item 1</button>
-        <button  class="overlay-content" mat-menu-item>Item 2</button>
-    </mat-menu>
-
+    <div class="navbar">
+        <button mat-button class="button" (click)="onaboutdlc()">About DLC</button>
+        <button mat-button class="button" (click)="onourworlds()">OurWorlds</button>
+        <button mat-button class="button" (click)="onexperiences()">Experiences</button>
+        <button mat-button class="button" (click)="ongallery()">Gallery</button>
+        <button mat-button class="button">Press</button>
+        <button mat-icon-button (click)="clickMenuBar()">
+            <mat-icon style="color: white; margin-left: 28px;">menu</mat-icon>
+        </button>
+    </div>
+    
 </mat-toolbar>
+
+
+<div *ngIf="displayMenuBar">
+    <div class="menu_Container">
+        <div class="data">Magazine</div>
+        <div class="data">Company</div>
+        <div class="data">Foundation</div>
+        <div class="data">Careers</div>
+        <div class="data">Contact</div>
+    </div>
+    <button (click)="closeVideo()" class="close_btn">X</button>
+</div>
