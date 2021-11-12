@@ -42,5 +42,7 @@ export class HeaderComponent implements OnInit {
     this.displayMenuBar = false;
     this.navbar=false;
   }
-  
+  onpress() {
+    this.router.navigateByUrl("/press")
+  }
 }
