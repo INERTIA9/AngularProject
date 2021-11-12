@@ -121,8 +121,61 @@
             <button mat-icon-button>
                 <i class="material-icons-outlined" style="color: white;">east</i>
             </button>
+            <div fxLayout="row" fxLayoutAlign="start start" style="margin-left: -22px;">
+                <div>
+
+                    <span class="material-icons-outlined" style="color: white;">
+                        light_mode
+                    </span>
+                    <div>
+                        <h1 style="color: white;font-size: 12px;">53c</h1>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-icons-outlined" style="color: white; margin-left: 38px;">
+                        air
+                    </span>
+                    <div>
+                        <h1 style="color: white;font-size: 12px;margin-left: 34px;">53c</h1>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-icons-outlined" style="color: white; margin-left: 30px;">
+                        explore
+                    </span>
+                    <div>
+                        <h1 style="margin-left: 31px; color: white;font-size: 12px;">53c</h1>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
             <div>
-                <img src="" alt="">
+                <h1 style="color:#ffffff; margin-top: 89px;">Austin Texas</h1>
+            </div>
+
+            <div>
+                <h1 style="color: white; margin-top: 89px; font-family: gt-sectra; font-size: 36px;margin-left: -30px;">
+                    Driftwood</h1>
+            </div>
+
+            <div>
+                <img src="../../../assets/Images/driftwood2.jpg"
+                    style="width: 238px;height: 589px;margin-left: 175px;margin-top: -508px;" alt="">
+            </div>
+            <div>
+                <span class="material-icons-outlined" style="color: white; margin-left: -24px;">
+                    location_on
+                </span>
+            </div>
+            <div>
+
+                <h1 style="color: white; font-size: 0.8rem;margin-left: 10px;margin-top: -30px;">
+                    30.139339° N / -98.022342° W
+                </h1>
             </div>
 
         </mat-card>
@@ -134,7 +187,7 @@
 
 <div style="height:auto;">
     <div *ngIf="experiencesVideo" class="container">
-        <video src="../../../assets/Videos/homepageexperiencevideo/experiences_190722_093236.mp4" autoplay loop >
+        <video src="../../../assets/Videos/homepageexperiencevideo/experiences_190722_093236.mp4" autoplay loop>
 
         </video>
         <div style="position: absolute; align-items: center; margin-top: -600px; margin-left: 139px;">
@@ -152,7 +205,7 @@
                 Explore
             </button>
 
-            <button mat-icon-button   (click)="expvideoclose()"style="color: white; top: 0;right: 0; float: right;">
+            <button mat-icon-button (click)="expvideoclose()" style="color: white; top: 0;right: 0; float: right;">
                 <i class="material-icons-outlined" style="margin-left: 478px; margin-top: -410px;font-size: 2rem;">
                     close
                 </i>
@@ -271,6 +324,7 @@
         </div>
 
     </div>
+    <app-footer></app-footer>
 </div>
 
 
